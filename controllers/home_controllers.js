@@ -1,3 +1,4 @@
+const ToDo=require('../models/todo');
 module.exports.home = function(req, res){
     // console.log('from the route controller');
 
@@ -12,3 +13,5 @@ module.exports.home = function(req, res){
         });
     });
 };
+//okay so here u need to exxport todo.from models..
+//now try

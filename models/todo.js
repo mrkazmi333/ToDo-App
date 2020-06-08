@@ -18,3 +18,7 @@ const todoSchema = new mongoose.Schema({
 const ToDo = mongoose.model('ToDo', todoSchema);
 
 module.exports = ToDo;
+
+
+//this one.. here the app is not working
+//okay le t see me in this one
