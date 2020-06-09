@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-
 const todoSchema = new mongoose.Schema({
     description: {
         type: String,
@@ -10,10 +9,11 @@ const todoSchema = new mongoose.Schema({
         required: true
     },
     date: {
-        type: String,
+        type: Date,
         required: false
     }
 });
+
 
 const ToDo = mongoose.model('ToDo', todoSchema);
 

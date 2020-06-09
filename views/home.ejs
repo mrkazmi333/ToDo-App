@@ -51,7 +51,11 @@
                                     <!-- <label for= <%= i._id %>> -->
                                     <div class="date-desc-container">
                                         <h4 class="description"><%= i.description %></h4>
-                                        <p class="date"> <i class="far fa-calendar-alt"></i> <%= i.date %></p>
+                                        <p class="date"> <i class="far fa-calendar-alt"></i> 
+                                            <% if(i.date !== null){ %>
+                                            <%= i.date.toDateString() %>
+                                            <% } %>
+                                        </p>
                                     </div>
                                 </div>
                                 
